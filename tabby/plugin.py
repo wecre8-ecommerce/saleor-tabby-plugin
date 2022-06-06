@@ -13,6 +13,7 @@ from saleor.payment.interface import (
 )
 from saleor.plugins.base_plugin import BasePlugin, ConfigurationTypeField
 from saleor.plugins.models import PluginConfiguration
+from tabby import refund, capture, confirm_payment, process_payment
 
 logger = logging.getLogger(__name__)
 
